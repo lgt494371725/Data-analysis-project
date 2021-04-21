@@ -122,7 +122,7 @@ c_itcont.info()
 ```
 
 若加载失败可直接访问网页链接
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/info.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/info.png)
 
 通过上面的探索我们知道目前数据集的一些基本情况，目前数据总共有756205行，8列，总占用内存51.9+MB，`STATE`、`EMPLOYER`、`OCCUPATION`有缺失值，另外日期列目前为int64类型，需要进行转换为str类型。
 
@@ -141,11 +141,11 @@ c_itcont['TRANSACTION_DT'] = [i[3:7]+i[0:3] for i in c_itcont['TRANSACTION_DT'] 
 
 + 查看数据前3行
 `c_itcont.head(3)`
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/head(3).png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/head.png)
 
 + 查看数据表中数据类型的列的数据分布情况
 `c_itcont.describe()`
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/describe.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/describe.png)
 
 # 3、数据分析
 
