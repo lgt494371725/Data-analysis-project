@@ -145,6 +145,7 @@ c_itcont['TRANSACTION_DT'] = [i[3:7]+i[0:3] for i in c_itcont['TRANSACTION_DT'] 
 
 + 查看数据表中数据类型的列的数据分布情况
 `c_itcont.describe()`
+
 ![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/describe.png)
 
 # 3、数据分析
