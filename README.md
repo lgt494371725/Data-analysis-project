@@ -266,7 +266,7 @@ plt.xlabel('STATE')
 plt.ylabel('total_AMT')
 plt.title("total contributions per state")
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/graph1.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/main/graph1.png)
 
 #### 4.2 各州捐款总人数可视化
 
