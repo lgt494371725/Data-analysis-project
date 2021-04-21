@@ -178,7 +178,7 @@ group by CAND_PTY_AFFILIATION
 order by sum(TRANSACTION_AMT) desc
 limit 10;
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query1.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query1.png)
 
 + 计算每个总统候选人所获得的捐款总额，然后排序，取前十位
 ```
@@ -188,7 +188,7 @@ group by CAND_NAME
 order by sum(TRANSACTION_AMT) desc
 limit 10;
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query2.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query2.png)
 
 获得捐赠最多的党派有`DEM(民主党)`、`REP(共和党)`，分别对应`BIDEN, JOSEPH R JR(拜登)`和`TRUMP, DONALD J.(特朗普)`，从我们目前分析的2020.7.22-2020.8.20这一个月的数据来看，在选民的捐赠数据中拜登代表的民主党完胜特朗普代表的共和党，由于完整数据量过大，所以没有对所有数据进行汇总分析，因此也不能确定11月大选公布结果就一定是拜登当选
 
@@ -200,7 +200,7 @@ group by OCCUPATION
 order by sum(TRANSACTION_AMT) desc
 limit 10;
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query3.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query3.png)
 
 + 查看每个职业捐款人的数量
 ```
@@ -210,7 +210,7 @@ group by OCCUPATION
 order by number desc
 limit 10;
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query4.png)
+![image]https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query4.png)
 
 从捐款人的职业这个角度分析，我们会发现`NOT EMPLOYED(自由职业)`的总捐赠额是最多，通过查看每个职业捐赠的人数来看，我们就会发现是因为`NOT EMPLOYED(自由职业)`人数多的原因，另外退休人员捐款人数也特别多，所以捐款总数对应的也多，其他比如像：律师、创始人、医生、顾问、教授、主管这些高薪人才虽然捐款总人数少，但是捐款总金额也占据了很大比例。
 
@@ -222,7 +222,7 @@ group by state
 order by sum(TRANSACTION_AMT) desc
 limit 5;
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query5.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query5.png)
 
 + 查看每个州捐款人的数量
 ```
@@ -232,7 +232,7 @@ group by state
 order by number desc
 limit 5
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/query6.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/query6.png)
 
 最后查看每个州的捐款总金额，我们会发现`CA(加利福利亚)`、`NY(纽约)`、`FL(弗罗里达)`这几个州的捐款是最多的，在捐款人数上也是在Top端，另一方面也凸显出这些州的经济水平发达。
 大家也可以通过数据查看下上面列举的高端职业在各州的分布情况，进行进一步的分析探索。
@@ -265,7 +265,7 @@ plt.xlabel('STATE')
 plt.ylabel('total_AMT')
 plt.title("total contributions per state")
 ```
-![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/main/graph1.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/graph1.png)
 
 #### 4.2 各州捐款总人数可视化
 
@@ -276,7 +276,7 @@ plt.xlabel('STATE')
 plt.ylabel('amount')
 plt.title("the total number of donations per state")
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/graph2.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/graph2.png)
 
 #### 4.3 热门候选人拜登在总统候选人中获得的捐款总额占比
 
@@ -290,4 +290,4 @@ plt.pie(sizes, labels=labels, autopct='%1.1f%%',
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.show()
 ```
-![image](https://gitee.com/liu-guanting/Data-analysis-project/blob/main/photos/graph3.png)
+![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/graph3.png)
