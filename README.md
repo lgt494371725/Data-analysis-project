@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project1
 # 前言
 本项目改编自阿里天池学习赛，将主要利用Python进行数据分析以及数据可视化，包含数据集的处理、数据探索与清晰、数据分析、数据可视化四部分，利用pandas、mysql、matplotlib
@@ -292,3 +293,8 @@ plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.show()
 ```
 ![image](https://raw.githubusercontent.com/lgt494371725/Data-analysis-project/master/photos/graph3.png)
+=======
+# Data-analysis-project
+the project in this repository all will be created by myself or  is the second adaptation version from some contest
++ [project1](https://github.com/lgt494371725/Data-analysis-project/tree/master) 利用pandas分析美国总统选民情况
+>>>>>>> ca96879d66c0643ec571bdc1a8f175786cf13a22
